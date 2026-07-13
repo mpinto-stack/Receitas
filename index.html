@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu Espanhol de Chef — Tortilla com Bacon e Paprika</title>
+  <style>
+    :root{
+      --bg:#fff8ef; --card:#ffffff; --ink:#2b2118; --muted:#6d5a49; --accent:#b83220;
+      --accent2:#f0a03a; --line:#ead8c4; --good:#2f7d32; --shadow:0 14px 35px rgba(70,42,18,.12);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#fff8ef,#fff3e2);color:var(--ink);line-height:1.55}
+    header{padding:44px 20px 24px;text-align:center;background:radial-gradient(circle at top,#ffe3b1 0,#fff8ef 55%)}
+    header h1{margin:0;font-size:clamp(2rem,5vw,4rem);letter-spacing:-.04em}
+    header p{max-width:780px;margin:14px auto 0;color:var(--muted);font-size:1.05rem}
+    .badge{display:inline-flex;gap:.45rem;align-items:center;background:#fff;border:1px solid var(--line);box-shadow:var(--shadow);border-radius:999px;padding:8px 14px;margin-bottom:18px;color:var(--accent);font-weight:700}
+    nav{position:sticky;top:0;z-index:10;background:rgba(255,248,239,.88);backdrop-filter:blur(10px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+    nav .wrap{max-width:1100px;margin:auto;display:flex;overflow:auto;gap:8px;padding:10px 14px}
+    nav a, .tab-btn{white-space:nowrap;text-decoration:none;border:1px solid var(--line);background:#fff;color:var(--ink);padding:10px 13px;border-radius:999px;font-weight:700;cursor:pointer}
+    nav a:hover,.tab-btn:hover,.tab-btn.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    main{max-width:1100px;margin:0 auto;padding:24px 16px 70px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:18px}
+    .card{grid-column:span 12;background:var(--card);border:1px solid var(--line);border-radius:24px;padding:22px;box-shadow:var(--shadow)}
+    @media(min-width:800px){.half{grid-column:span 6}.third{grid-column:span 4}.twoThird{grid-column:span 8}}
+    h2{font-size:1.9rem;margin:0 0 12px;letter-spacing:-.03em} h3{margin:22px 0 8px;color:var(--accent)}
+    .lead{font-size:1.06rem;color:var(--muted)}
+    .tabs{display:flex;flex-wrap:wrap;gap:8px;margin:8px 0 18px}.tab-panel{display:none}.tab-panel.active{display:block}
+    ul,ol{padding-left:1.25rem}.shopping-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;padding:0;list-style:none}
+    .shopping-list li{background:#fffaf3;border:1px solid var(--line);border-radius:14px;padding:10px 12px;display:flex;gap:10px;align-items:flex-start}
+    input[type="checkbox"]{width:20px;height:20px;accent-color:var(--good);margin-top:2px;flex:0 0 auto}.checked span{text-decoration:line-through;color:#9a8878}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0}.btn{border:0;background:var(--accent);color:#fff;padding:10px 14px;border-radius:999px;font-weight:800;cursor:pointer}.btn.secondary{background:#fff;color:var(--accent);border:1px solid var(--accent)}
+    .note{border-left:5px solid var(--accent2);background:#fff7e9;padding:12px 14px;border-radius:12px;margin:14px 0;color:#4c3928}
+    .chef{border-left:5px solid var(--good);background:#eef8ee;padding:12px 14px;border-radius:12px;margin:14px 0}.time{display:inline-block;background:#fff0d8;border:1px solid var(--line);border-radius:999px;padding:5px 10px;margin:4px 4px 4px 0;font-weight:700;color:#6b3a00}
+    footer{text-align:center;color:var(--muted);padding:30px 16px;border-top:1px solid var(--line)}
+    @media print{nav,.controls,.tab-btn{display:none}.tab-panel{display:block!important}.card{box-shadow:none;break-inside:avoid}body{background:#fff}}
+  </style>
+</head>
+<body>
+<header id="topo">
+  <div class="badge">⭐ Menu familiar com acabamento de chef</div>
+  <h1>Menu Espanhol de Chef</h1>
+  <p>Tortilla cremosa com bacon e paprika, pan con tomate, salada fresca sem pimentos e sobremesa simples de laranja. Pensado para 4 pessoas e para cozinhar hoje à noite sem stress.</p>
+</header>
+<nav><div class="wrap">
+  <a href="#compras">Compras</a><a href="#abas">Receitas por abas</a><a href="#timing">Timing</a><a href="#chef">Qualidade chef</a><a href="#seguranca">Segurança</a><a href="#topo">Topo</a>
+</div></nav>
+<main>
+<section class="grid" id="compras">
+  <div class="card twoThird"><h2>Lista interativa de compras</h2><p class="lead">Marca o que já tens ou o que fores colocando no carrinho. A seleção fica guardada neste browser.</p>
+    <div class="controls"><button class="btn" onclick="markAll(true)">Marcar tudo</button><button class="btn secondary" onclick="markAll(false)">Limpar seleção</button><button class="btn secondary" onclick="window.print()">Imprimir / Guardar PDF</button></div>
+    <ul class="shopping-list" id="shoppingList">
+      <li><input type="checkbox"><span><strong>700 g batatas</strong> Agria/Monalisa ou batata para fritar/cozer</span></li>
+      <li><input type="checkbox"><span><strong>6 ovos grandes</strong></span></li>
+      <li><input type="checkbox"><span><strong>1 cebola grande</strong> para a tortilla</span></li>
+      <li><input type="checkbox"><span><strong>120–150 g bacon em cubos</strong></span></li>
+      <li><input type="checkbox"><span><strong>Paprika/pimentón</strong> doce ou fumado</span></li>
+      <li><input type="checkbox"><span><strong>Azeite virgem extra</strong> mínimo 350 ml</span></li>
+      <li><input type="checkbox"><span><strong>Sal fino</strong></span></li>
+      <li><input type="checkbox"><span><strong>Flor de sal</strong></span></li>
+      <li><input type="checkbox"><span><strong>1 pão rústico</strong> ou baguete boa</span></li>
+      <li><input type="checkbox"><span><strong>6 tomates maduros</strong> 3 para entrada + 3 para salada</span></li>
+      <li><input type="checkbox"><span><strong>1 dente/cabeça de alho</strong></span></li>
+      <li><input type="checkbox"><span><strong>1 pepino</strong></span></li>
+      <li><input type="checkbox"><span><strong>1/2 cebola roxa</strong></span></li>
+      <li><input type="checkbox"><span><strong>1 frasco pequeno de azeitonas</strong></span></li>
+      <li><input type="checkbox"><span><strong>Vinagre de Jerez</strong> ou vinagre de vinho tinto</span></li>
+      <li><input type="checkbox"><span><strong>1 limão</strong></span></li>
+      <li><input type="checkbox"><span><strong>4 laranjas</strong></span></li>
+      <li><input type="checkbox"><span><strong>Canela</strong></span></li>
+      <li><input type="checkbox"><span><strong>Mel</strong></span></li>
+      <li><input type="checkbox"><span><strong>Hortelã fresca</strong> opcional</span></li>
+      <li><input type="checkbox"><span><strong>Salsa/coentros</strong> opcional para salada</span></li>
+      <li><input type="checkbox"><span><strong>Presunto</strong> opcional para o pan con tomate</span></li>
+      <li><input type="checkbox"><span><strong>Saco térmico + acumuladores de frio</strong> para bacon e ovos</span></li>
+    </ul>
+  </div>
+  <aside class="card third"><h2>Menu</h2><ol><li>Pan con tomate</li><li>Tortilla cremosa com bacon e paprika</li><li>Salada fresca sem pimentos</li><li>Laranja com canela, mel e hortelã</li></ol><div class="note"><strong>Sem pimentos no menu.</strong> A paprika fica só como toque no bacon, em dose baixa.</div></aside>
+</section>
+<section class="card" id="abas"><h2>Receitas por abas</h2><div class="tabs">
+  <button class="tab-btn active" onclick="openTab(event,'entrada')">Entrada</button><button class="tab-btn" onclick="openTab(event,'principal')">Tortilla</button><button class="tab-btn" onclick="openTab(event,'salada')">Acompanhamento</button><button class="tab-btn" onclick="openTab(event,'sobremesa')">Sobremesa</button></div>
+  <article id="entrada" class="tab-panel active"><h2>Pan con tomate</h2><span class="time">10 min</span><h3>Ingredientes</h3><ul><li>Pão rústico ou baguete</li><li>3 tomates maduros</li><li>1 dente de alho</li><li>Azeite virgem extra</li><li>Flor de sal</li><li>Presunto opcional</li></ul><h3>Passo a passo</h3><ol><li>Corta o pão em fatias de 1,5–2 cm.</li><li>Torra até ficar crocante.</li><li>Esfrega ligeiramente com alho cortado ao meio.</li><li>Esfrega tomate maduro no pão ou usa tomate ralado.</li><li>Finaliza com flor de sal e azeite.</li><li>Se quiseres, junta presunto por cima e serve logo.</li></ol></article>
+  <article id="principal" class="tab-panel"><h2>Tortilla cremosa com bacon e paprika</h2><span class="time">55–60 min</span><h3>Ingredientes</h3><ul><li>700 g batatas</li><li>6 ovos grandes</li><li>1 cebola grande</li><li>120–150 g bacon em cubos</li><li>1/2 colher de chá de paprika/pimentón doce ou fumado</li><li>300–350 ml azeite virgem extra</li><li>Sal fino e flor de sal</li></ul><h3>Passo a passo</h3><ol><li>Descasca e corta as batatas em fatias de 2–3 mm.</li><li>Corta a cebola em meia-lua fina.</li><li>Confita batata e cebola em azeite, lume médio-baixo, 25–35 min. Deve ficar macia, não crocante.</li><li>À parte, salteia o bacon sem azeite. Quando dourar, baixa o lume, junta a paprika por 10–15 segundos e desliga.</li><li>Escorre a batata, guarda o azeite e deixa arrefecer 2–3 min.</li><li>Bate os ovos só até misturar. Põe pouco sal.</li><li>Junta batata, cebola e bacon aos ovos. Repousa 10 min.</li><li>Aquece frigideira antiaderente de 20–22 cm com fio do azeite usado.</li><li>Cozinha 3–4 min de um lado.</li><li>Vira com prato e cozinha mais 1,5–2 min para ponto cremoso.</li><li>Descansa 5 min e finaliza com flor de sal.</li></ol><div class="chef"><strong>Ponto Michelin caseiro:</strong> interior húmido, brilhante e cremoso; exterior dourado e limpo. Não deixes secar.</div></article>
+  <article id="salada" class="tab-panel"><h2>Salada fresca sem pimentos</h2><span class="time">15 min</span><h3>Ingredientes</h3><ul><li>3 tomates maduros</li><li>1 pepino</li><li>1/2 cebola roxa</li><li>Azeitonas</li><li>Azeite, vinagre de Jerez, limão e sal</li><li>Salsa/coentros opcionais</li></ul><h3>Passo a passo</h3><ol><li>Corta o tomate em gomos grandes.</li><li>Corta o pepino em meias-luas.</li><li>Lamina a cebola roxa fina. Para suavizar, deixa 5 min em água fria com vinagre.</li><li>Junta azeitonas.</li><li>Tempera com azeite, vinagre, gotas de limão e sal.</li><li>Repousa 10 min antes de servir.</li></ol></article>
+  <article id="sobremesa" class="tab-panel"><h2>Laranja com canela, mel e hortelã</h2><span class="time">8 min</span><h3>Ingredientes</h3><ul><li>4 laranjas</li><li>Canela</li><li>Mel</li><li>Hortelã opcional</li></ul><h3>Passo a passo</h3><ol><li>Descasca as laranjas retirando o máximo de parte branca.</li><li>Corta em rodelas finas.</li><li>Dispõe numa travessa.</li><li>Polvilha com canela.</li><li>Junta um fio muito leve de mel.</li><li>Finaliza com hortelã picada, se tiveres.</li></ol></article>
+</section>
+<section class="grid" id="timing"><div class="card half"><h2>Timing recomendado</h2><ol><li><strong>Antes:</strong> faz a sobremesa e deixa pronta.</li><li><strong>Depois:</strong> corta a salada, mas tempera só perto da hora.</li><li><strong>1 hora antes:</strong> começa batata e cebola da tortilla.</li><li><strong>Enquanto confita:</strong> faz bacon com paprika.</li><li><strong>15 min antes:</strong> mistura ovos, repousa e cozinha a tortilla.</li><li><strong>Na hora:</strong> torra pão, faz pan con tomate e serve.</li></ol></div>
+<div class="card half" id="seguranca"><h2>Compras no carro</h2><p>Para ficar várias horas numa garagem até 22 ºC, usa saco térmico com frio para bacon e ovos se vierem refrigerados. O resto dos ingredientes aguenta melhor fora do frio.</p><div class="note"><strong>Regra prática:</strong> perecíveis fora do frio durante muitas horas não valem o risco. Bacon e ovos vão no saco térmico.</div></div></section>
+<section class="card" id="chef"><h2>Confirmação: fica qualidade de chef Michelin?</h2><p><strong>Sim — para cozinha caseira, isto fica com qualidade de chef</strong> se cumprires três pontos: batata confitada lentamente, bacon bem escorrido com paprika sem queimar, e tortilla retirada ainda cremosa. A qualidade “Michelin” aqui não vem de ingredientes caros; vem da técnica, controlo de textura, equilíbrio de gordura/acidez e apresentação limpa.</p><ul><li><strong>Textura:</strong> tortilla húmida e brilhante por dentro.</li><li><strong>Sabor:</strong> doçura da cebola, fumado da paprika, salgado do bacon.</li><li><strong>Equilíbrio:</strong> salada ácida e sobremesa fresca limpam o palato.</li><li><strong>Apresentação:</strong> serve a tortilla morna, cortada em triângulos limpos, com salada separada e pan con tomate acabado à última hora.</li></ul></section>
+</main><footer>Bom jantar, Miguel — isto tem tudo para parecer simples, mas comer como prato de chef.</footer>
+<script>
+function openTab(evt,id){document.querySelectorAll('.tab-panel').forEach(p=>p.classList.remove('active'));document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));document.getElementById(id).classList.add('active');evt.currentTarget.classList.add('active');}
+const list=document.getElementById('shoppingList');const boxes=[...list.querySelectorAll('input[type="checkbox"]')];
+function save(){const vals=boxes.map(b=>b.checked);localStorage.setItem('menuTortillaCompras',JSON.stringify(vals));boxes.forEach(b=>b.closest('li').classList.toggle('checked',b.checked));}
+function load(){try{const vals=JSON.parse(localStorage.getItem('menuTortillaCompras')||'[]');boxes.forEach((b,i)=>{b.checked=!!vals[i];b.closest('li').classList.toggle('checked',b.checked);});}catch(e){}}
+function markAll(v){boxes.forEach(b=>b.checked=v);save();}
+boxes.forEach(b=>b.addEventListener('change',save));load();
+</script></body></html>
