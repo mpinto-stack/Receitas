@@ -1,1 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 220" role="img" aria-labelledby="title desc"><title id="title">Livro de Receitas do Miguel</title><desc id="desc">Logo simples em vetor com livro e estrela Miguelin</desc><defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop offset="0" stop-color="#ffb86b"/><stop offset="1" stop-color="#ef5d4a"/></linearGradient></defs><rect width="220" height="220" rx="52" fill="#fff7ed"/><path d="M55 59c0-9 7-16 16-16h46c14 0 25 11 25 25v109c0-14-11-25-25-25H71c-9 0-16-7-16-16V59Z" fill="#ffffff" stroke="#2b2118" stroke-width="8"/><path d="M165 43h-48c-14 0-25 11-25 25v109c0-14 11-25 25-25h48V43Z" fill="url(#g)" stroke="#2b2118" stroke-width="8"/><path d="M110 68v86" stroke="#2b2118" stroke-width="6" stroke-linecap="round"/><path d="m143 75 8 17 19 2-14 13 4 19-17-10-17 10 4-19-14-13 19-2 8-17Z" fill="#fff7ed" stroke="#2b2118" stroke-width="5" stroke-linejoin="round"/><path d="M69 83h28M69 104h22M69 125h28" stroke="#2b2118" stroke-width="6" stroke-linecap="round"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+<title id="title">Livro de Receitas do Miguel</title>
+<desc id="desc">Logo vetorial personalizado com livro de receitas, iniciais MR e estrela Miguelin</desc>
+<defs>
+  <linearGradient id="warm" x1="20" y1="20" x2="236" y2="236" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#ffcf8a"/>
+    <stop offset="0.55" stop-color="#f07a55"/>
+    <stop offset="1" stop-color="#d94c3d"/>
+  </linearGradient>
+  <linearGradient id="paper" x1="70" y1="54" x2="190" y2="200" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#fffdf8"/>
+    <stop offset="1" stop-color="#fff0dc"/>
+  </linearGradient>
+</defs>
+<rect x="12" y="12" width="232" height="232" rx="58" fill="#fff7ed"/>
+<circle cx="196" cy="58" r="24" fill="url(#warm)" opacity="0.22"/>
+<path d="M62 62c0-10 8-18 18-18h52c17 0 30 13 30 30v128c0-17-13-30-30-30H80c-10 0-18-8-18-18V62Z" fill="url(#paper)" stroke="#241b16" stroke-width="8"/>
+<path d="M194 44h-62c-17 0-30 13-30 30v128c0-17 13-30 30-30h62V44Z" fill="url(#warm)" stroke="#241b16" stroke-width="8"/>
+<path d="M128 70v104" stroke="#241b16" stroke-width="6" stroke-linecap="round"/>
+<path d="M80 89h34M80 112h28M80 135h34" stroke="#241b16" stroke-width="6" stroke-linecap="round"/>
+<path d="m169 76 7 16 17 2-13 11 4 17-15-9-15 9 4-17-13-11 17-2 7-16Z" fill="#fff7ed" stroke="#241b16" stroke-width="5" stroke-linejoin="round"/>
+<text x="82" y="164" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#241b16">M</text>
+<text x="144" y="164" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7ed" stroke="#241b16" stroke-width="1">R</text>
+<path d="M206 112v52M196 112v22c0 6 4 10 10 10s10-4 10-10v-22" fill="none" stroke="#241b16" stroke-width="6" stroke-linecap="round"/>
+<path d="M218 112v52" stroke="#241b16" stroke-width="6" stroke-linecap="round"/>
+</svg>

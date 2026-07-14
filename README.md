@@ -1,30 +1,32 @@
 # Livro de Receitas do Miguel
 
+## Português
+
 Repositório do site pessoal de receitas do Miguel.
 
-## Funcionamento do site
+### Funcionamento
 
-O site é estático e foi pensado para ser publicado com GitHub Pages. Não usa base de dados, servidor ou serviços pagos.
+O site é estático e foi pensado para GitHub Pages. Não usa base de dados, servidor ou serviços pagos.
 
-A base do conteúdo está no ficheiro:
+O conteúdo das receitas está em:
 
 ```text
 data/recipes.json
 ```
 
-O JavaScript lê esse ficheiro e gera automaticamente:
+O JavaScript lê esse ficheiro e gera:
 
-- receitas separadas por **Entradas**, **Pratos principais** e **Sobremesas**;
-- cartões de receitas;
+- receitas por abas: **Entradas**, **Pratos principais** e **Sobremesas**;
+- pesquisa por nome, ingredientes, categoria, tags e preparação;
+- filtros rápidos por tags;
 - página de detalhe de cada receita;
-- pesquisa por nome, ingrediente, categoria, tags e texto da preparação;
-- filtros rápidos por tipo de receita/ingrediente;
-- lista de compras por receita;
-- lista de compras combinada a partir de várias receitas selecionadas;
-- modo cozinhar com passos grandes para usar no telemóvel;
+- classificação pessoal de 1 a 5 estrelas **Miguelin**;
+- lista de compras combinada sem ingredientes duplicados;
+- itens comprados rasurados através de checkboxes;
+- modo cozinhar com passos grandes para telemóvel;
 - página para gerar novas receitas em JSON.
 
-## Estrutura do código
+### Estrutura
 
 ```text
 .
@@ -36,39 +38,112 @@ O JavaScript lê esse ficheiro e gera automaticamente:
 ├── data/
 │   └── recipes.json
 └── assets/
-    └── logo.svg
+    ├── logo.svg
+    └── photos/
 ```
 
-## Como adicionar receitas
+### Adicionar uma receita
 
-### Método recomendado
+1. Abre o site.
+2. Vai a **Adicionar**.
+3. Preenche os campos.
+4. Clica em **Gerar JSON**.
+5. Copia o bloco gerado.
+6. No GitHub, abre `data/recipes.json`.
+7. Clica no lápis de edição.
+8. Cola o bloco dentro da lista de receitas.
+9. Faz **Commit changes**.
 
-1. Abrir o site.
-2. Ir a **Adicionar receita**.
-3. Preencher os campos.
-4. Clicar em **Gerar JSON**.
-5. Copiar o bloco gerado.
-6. Abrir `data/recipes.json` no GitHub.
-7. Colar o novo bloco dentro da lista de receitas.
-8. Fazer commit.
+### Adicionar fotos
 
-### Método direto
+1. Coloca a imagem em `assets/photos/`.
+2. Usa nomes simples, sem espaços. Exemplo: `arroz-frito-camarao.jpg`.
+3. Na receita, preenche o campo `photo` com:
 
-Também é possível editar diretamente o ficheiro `data/recipes.json` no GitHub, mantendo a mesma estrutura dos objetos existentes.
+```text
+assets/photos/arroz-frito-camarao.jpg
+```
 
-## Publicação com GitHub Pages
+### Publicar no GitHub Pages
 
-1. Criar um repositório no GitHub.
-2. Enviar todos estes ficheiros para o repositório.
-3. Abrir **Settings** do repositório.
-4. Entrar em **Pages**.
-5. Escolher a branch principal e a pasta raiz.
-6. Guardar.
-7. O GitHub Pages publica o site no endereço indicado.
+1. Cria um repositório no GitHub.
+2. Envia os ficheiros deste projeto.
+3. Vai a **Settings > Pages**.
+4. Escolhe a branch principal e a pasta raiz.
+5. Guarda.
 
-## Notas
+---
 
-- O site foi feito para funcionar bem em telemóvel e computador.
-- As seleções da lista de compras ficam guardadas no browser através de `localStorage`.
-- O campo `miguelin` representa a classificação pessoal de 1 a 5 estrelas Miguelin.
-- O campo `photo` está preparado para uma foto futura por receita.
+# Miguel's Recipe Book
+
+## English
+
+Repository for Miguel's personal recipe website.
+
+### How it works
+
+This is a static website designed for GitHub Pages. It does not require a database, server, or paid services.
+
+Recipe content is stored in:
+
+```text
+data/recipes.json
+```
+
+The JavaScript reads that file and generates:
+
+- recipe tabs: **Starters**, **Main dishes**, and **Desserts**;
+- search by title, ingredients, category, tags, and preparation text;
+- quick tag filters;
+- recipe detail pages;
+- personal 1-to-5 **Miguelin** star rating;
+- combined shopping list without duplicated ingredients;
+- bought items crossed out with checkboxes;
+- cooking mode with large step-by-step instructions for mobile;
+- a page to generate new recipes in JSON format.
+
+### Structure
+
+```text
+.
+├── index.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── app.js
+├── data/
+│   └── recipes.json
+└── assets/
+    ├── logo.svg
+    └── photos/
+```
+
+### Add a recipe
+
+1. Open the website.
+2. Go to **Adicionar**.
+3. Fill in the fields.
+4. Click **Gerar JSON**.
+5. Copy the generated block.
+6. On GitHub, open `data/recipes.json`.
+7. Click the edit pencil.
+8. Paste the block inside the recipes list.
+9. Click **Commit changes**.
+
+### Add photos
+
+1. Add the image to `assets/photos/`.
+2. Use simple filenames without spaces. Example: `arroz-frito-camarao.jpg`.
+3. In the recipe, set the `photo` field to:
+
+```text
+assets/photos/arroz-frito-camarao.jpg
+```
+
+### Publish with GitHub Pages
+
+1. Create a GitHub repository.
+2. Upload the project files.
+3. Go to **Settings > Pages**.
+4. Choose the main branch and root folder.
+5. Save.
