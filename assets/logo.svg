@@ -1,26 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
 <title id="title">Livro de Receitas do Miguel</title>
-<desc id="desc">Logo vetorial personalizado com livro de receitas, iniciais MR e estrela Miguelin</desc>
-<defs>
-  <linearGradient id="warm" x1="20" y1="20" x2="236" y2="236" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#ffcf8a"/>
-    <stop offset="0.55" stop-color="#f07a55"/>
-    <stop offset="1" stop-color="#d94c3d"/>
-  </linearGradient>
-  <linearGradient id="paper" x1="70" y1="54" x2="190" y2="200" gradientUnits="userSpaceOnUse">
-    <stop offset="0" stop-color="#fffdf8"/>
-    <stop offset="1" stop-color="#fff0dc"/>
-  </linearGradient>
-</defs>
-<rect x="12" y="12" width="232" height="232" rx="58" fill="#fff7ed"/>
-<circle cx="196" cy="58" r="24" fill="url(#warm)" opacity="0.22"/>
-<path d="M62 62c0-10 8-18 18-18h52c17 0 30 13 30 30v128c0-17-13-30-30-30H80c-10 0-18-8-18-18V62Z" fill="url(#paper)" stroke="#241b16" stroke-width="8"/>
-<path d="M194 44h-62c-17 0-30 13-30 30v128c0-17 13-30 30-30h62V44Z" fill="url(#warm)" stroke="#241b16" stroke-width="8"/>
-<path d="M128 70v104" stroke="#241b16" stroke-width="6" stroke-linecap="round"/>
-<path d="M80 89h34M80 112h28M80 135h34" stroke="#241b16" stroke-width="6" stroke-linecap="round"/>
-<path d="m169 76 7 16 17 2-13 11 4 17-15-9-15 9 4-17-13-11 17-2 7-16Z" fill="#fff7ed" stroke="#241b16" stroke-width="5" stroke-linejoin="round"/>
-<text x="82" y="164" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#241b16">M</text>
-<text x="144" y="164" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="900" fill="#fff7ed" stroke="#241b16" stroke-width="1">R</text>
-<path d="M206 112v52M196 112v22c0 6 4 10 10 10s10-4 10-10v-22" fill="none" stroke="#241b16" stroke-width="6" stroke-linecap="round"/>
-<path d="M218 112v52" stroke="#241b16" stroke-width="6" stroke-linecap="round"/>
+<desc id="desc">Logo simples com livro aberto, letra M e estrela Miguelin</desc>
+<rect width="256" height="256" rx="56" fill="#fff7ed"/>
+<path d="M52 72c0-9 7-16 16-16h52c12 0 22 10 22 22v116c0-12-10-22-22-22H68c-9 0-16-7-16-16V72Z" fill="#ffffff" stroke="#2b2118" stroke-width="10" stroke-linejoin="round"/>
+<path d="M204 72c0-9-7-16-16-16h-52c-12 0-22 10-22 22v116c0-12 10-22 22-22h52c9 0 16-7 16-16V72Z" fill="#e86149" stroke="#2b2118" stroke-width="10" stroke-linejoin="round"/>
+<path d="M128 80v104" stroke="#2b2118" stroke-width="8" stroke-linecap="round"/>
+<path d="M78 100h30M78 124h24M78 148h30" stroke="#2b2118" stroke-width="8" stroke-linecap="round"/>
+<path d="M149 150V98l22 28 22-28v52" fill="none" stroke="#fff7ed" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="m128 28 10 21 23 3-17 16 4 23-20-11-20 11 4-23-17-16 23-3 10-21Z" fill="#ffb86b" stroke="#2b2118" stroke-width="8" stroke-linejoin="round"/>
 </svg>

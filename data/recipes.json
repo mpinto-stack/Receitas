@@ -6,7 +6,7 @@
     "servings": "4 adultos + 1 criança",
     "time": "25–35 min",
     "difficulty": "Fácil",
-    "miguelin": 0,
+    "miguelin": 5,
     "intro": "Entrada portuguesa simples, rápida e perfeita para servir com pão para aproveitar o molho.",
     "ingredients": [
       "2 kg de amêijoas",
@@ -58,7 +58,7 @@
     "servings": "4 pessoas",
     "time": "10 min",
     "difficulty": "Muito fácil",
-    "miguelin": 0,
+    "miguelin": 4,
     "intro": "Entrada simples de pão tostado com tomate, alho, azeite e flor de sal.",
     "ingredients": [
       "Pão rústico ou baguete",
@@ -103,7 +103,7 @@
     "servings": "4 pessoas",
     "time": "15 min",
     "difficulty": "Muito fácil",
-    "miguelin": 0,
+    "miguelin": 3,
     "intro": "Salada fresca de tomate, pepino, cebola roxa e azeitonas. Pode funcionar como entrada ou acompanhamento.",
     "ingredients": [
       "3 tomates maduros",
@@ -153,7 +153,7 @@
     "servings": "2–3 pessoas",
     "time": "25–30 min",
     "difficulty": "Fácil",
-    "miguelin": 0,
+    "miguelin": 4,
     "intro": "Arroz frito de inspiração asiática, ideal para usar arroz frio do dia anterior.",
     "ingredients": [
       "2 chávenas de arroz cozido frio",
@@ -222,7 +222,7 @@
     "servings": "2 porções",
     "time": "35–45 min",
     "difficulty": "Médio",
-    "miguelin": 0,
+    "miguelin": 5,
     "intro": "Ramen caseiro com caldo rápido, porco salteado e ovo de gema cremosa.",
     "ingredients": [
       "1 litro de água",
@@ -294,7 +294,7 @@
     "servings": "4–5 pessoas",
     "time": "40–50 min",
     "difficulty": "Médio",
-    "miguelin": 0,
+    "miguelin": 5,
     "intro": "Arroz de peixe cremoso e malandrinho, com tamboril, tomate e coentros.",
     "ingredients": [
       "1,5 kg de tamboril em cubos",
@@ -354,7 +354,7 @@
     "servings": "4 pessoas",
     "time": "55–60 min",
     "difficulty": "Médio",
-    "miguelin": 0,
+    "miguelin": 4,
     "intro": "Tortilla cremosa com batata confitada lentamente, bacon e toque de paprika.",
     "ingredients": [
       "700 g de batatas",
@@ -409,7 +409,7 @@
     "servings": "4 pessoas",
     "time": "40–50 min",
     "difficulty": "Fácil",
-    "miguelin": 0,
+    "miguelin": 3,
     "intro": "Porco selado com molho de cebola, alho e cerveja preta, espesso e brilhante.",
     "ingredients": [
       "Lombo ou febras de porco fatiadas",
@@ -471,7 +471,7 @@
     "servings": "4 pessoas",
     "time": "30–40 min",
     "difficulty": "Muito fácil",
-    "miguelin": 0,
+    "miguelin": 4,
     "intro": "Sobremesa fresca de ananás laminado, lima, hortelã e flor de sal.",
     "ingredients": [
       "1 ananás maduro",
@@ -517,7 +517,7 @@
     "servings": "4 pessoas",
     "time": "8 min",
     "difficulty": "Muito fácil",
-    "miguelin": 0,
+    "miguelin": 4,
     "intro": "Sobremesa simples e rápida de laranja em rodelas, canela, mel e hortelã.",
     "ingredients": [
       "4 laranjas",
